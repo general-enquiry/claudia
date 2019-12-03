@@ -1,0 +1,22 @@
+title: Project
+preset: page
+fields:
+  title:
+    label: Title
+    type: text
+    width: 1/2
+  category:
+    label: Category
+    type: text
+    width: 1/2
+  year:
+    label: Year
+    type: text
+    width: 1/2
+  date_range:
+    label: Date Range
+    type: text
+    width: 1/2
+  description:
+    label: Text
+    type: textarea

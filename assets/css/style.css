@@ -27,14 +27,22 @@ header, main, .row, .archive-header {
   flex-direction: row;
   margin: 1em;
 }
+header {
+  position: fixed;
+    top: 0; left: 0;
+    width: calc(100% - 2em);
+    z-index: 2;
+}
 main {
   margin-top: 0;
   position: fixed;
-  top: 60px; left: 0;
+  top: 0; left: 0;
   width: calc(100% - 2em);
+  z-index: 1;
 }
 .archive, .archive-images {
   width: 50%;
+  padding-top: 60px;
 }
 .archive-images {
   overflow-y: auto;
@@ -86,6 +94,15 @@ footer {
   outline: 1px solid;
   padding: 1em;
   transition: bottom 0.5s ease-in-out;
+  background-color: white;
+  z-index: 2;
+}
+footer a {
+  color: black;
+  text-decoration: none;
+}
+footer a:hover {
+  font-style: italic;
 }
 footer.open {
   bottom: 0;
