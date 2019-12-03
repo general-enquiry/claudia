@@ -1,8 +1,4 @@
-/* @font-face {
-  font-family: 'NeueHaasGrotesk';
-  src: url('../fonts/NHaasGroteskTXPro-55Rg.woff');
-  font-weight: normal;
-} */
+
 :root {
   --color-border: #272727;
   --font-body: 1.5rem;
@@ -12,7 +8,7 @@
 }
 html {
   background: white;
-  font-family: 'Helvetica', sans-serif !important;
+  font-family: 'Helvetica', sans-serif;
 }
 body {
   font-size: var(--font-body);
@@ -39,6 +35,10 @@ body {
   border-bottom: 2px solid var(--color-border);
   margin-bottom: 2rem;
   padding-top: 4rem;
+}
+.k-field-counter {
+  visibility: visible;
+  line-height: 0.9;
 }
 .k-panel {
   bottom: 0;
@@ -142,6 +142,17 @@ table {
 .tbl[data-version="1.0.9"] th:not(:last-child),
 .tbl[data-version="1.0.9"] td:not(:last-child) {
   border-right: none;
+}
+.tbl[data-version="1.0.9"] .tbl-search {
+  border-bottom: none;
+  font-size: 1.5rem;
+}
+.k-input[data-theme=field][data-disabled] {
+  background: white;
+  color: #ccc;
+}
+.k-dialog {
+  background: rgba(255,255,255,.8);
 }
 
 .k-input[data-theme=field] {
@@ -249,7 +260,7 @@ table {
     line-height: 1rem;
 }
 .k-input[data-theme=field] .k-number-input, .k-input[data-theme=field] .k-select-input, .k-input[data-theme=field] .k-text-input {
-    padding: .5rem 0;
+    padding: .35rem 0;
     line-height: 1.25rem;
 }
 .k-header .k-header-buttons, .k-button-group>.k-dropdown {
