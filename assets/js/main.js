@@ -3,6 +3,7 @@ $(document).ready(function() {
   $('.row').on('click',function() {
     $(this).next('.row-content').toggleClass('open').siblings().removeClass('open');
   })
+
   $('.footer-trigger').on('click',function() {
     $('footer').toggleClass('open')
   })

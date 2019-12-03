@@ -20,3 +20,4 @@ fields:
   description:
     label: Text
     type: textarea
+    buttons: false

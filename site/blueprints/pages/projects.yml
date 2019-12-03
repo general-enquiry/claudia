@@ -1,7 +1,7 @@
 title: Projects
 sections:
   drafts:
-    headline: Draft project
+    headline: Draft projects
     type: pagetable
     status: all
     limit: 25
