@@ -5,7 +5,7 @@
     <div class="row-wrap">
       <?php foreach(page('projects')->children()->listed() as $project): ?>
         <div class="row">
-          <span class="project">1</span>
+          <span class="project"><?php echo $project->num() ?></span>
           <span class="title"><?php echo $project->title() ?></span>
           <span class="category"><?php echo $project->category() ?></span>
           <span class="date"><?php echo $project->year() ?></span>

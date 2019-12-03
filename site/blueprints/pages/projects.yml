@@ -1,7 +1,21 @@
 title: Projects
-preset: pages
-fields:
-  text:
-    label: Text
-    type: textarea
-    size: large
+sections:
+  drafts:
+    headline: Draft project
+    type: pagetable
+    status: all
+    limit: 25
+    templates:
+      - project
+    columns:
+      title:
+        label: Title
+        text: '{{ page.title }}'
+        searchable: true
+      category:
+        label: Category
+        text: '{{ page.category }}'
+        searchable: true
+      year:
+        label: Year
+        text: '{{ page.year }}'

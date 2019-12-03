@@ -83,8 +83,13 @@ h1 {
   flex: 2;
 }
 .row-content{
+  height: 0px;
+  overflow-y: hidden;
+  /* transition: all 0.5s ease-in-out; */
+}
+.row-content.open {
+  height: auto;
   margin: 1em 0;
-  display: none;
 }
 
 footer {
