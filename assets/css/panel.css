@@ -40,6 +40,22 @@ body {
   visibility: visible;
   line-height: 0.9;
 }
+.k-topbar-button {
+  text-transform: uppercase;
+}
+.k-search-types>.k-button {
+  padding: 0 0 0 .7rem;
+  font-size: 1.5rem;
+}
+.k-search li strong {
+  font-size: 1.5rem;
+}
+[data-version="1.0.9"] .k-status-flag-listed .k-icon, .k-icon-dots {
+  margin-top: -4px;
+}
+.k-search-input input {
+  padding-top: .9rem;
+}
 .k-panel {
   bottom: 0;
   background: #fefefe;
