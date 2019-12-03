@@ -79,6 +79,9 @@ h1 {
 .project, .category, .date {
   flex: 1;
 }
+.date-range {
+  text-indent: 8.8em;
+}
 .title {
   flex: 2;
 }

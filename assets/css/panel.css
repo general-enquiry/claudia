@@ -1,6 +1,7 @@
 
 :root {
   --color-border: #272727;
+  --color-attn: #FF4500;
   --font-body: 1.5rem;
 }
 :focus {
@@ -45,16 +46,19 @@ body {
 }
 .k-search-types>.k-button {
   padding: 0 0 0 .7rem;
-  font-size: 1.5rem;
+  font-size: var(--font-body);
 }
 .k-search li strong {
-  font-size: 1.5rem;
+  font-size: var(--font-body);
 }
 [data-version="1.0.9"] .k-status-flag-listed .k-icon, .k-icon-dots {
   margin-top: -4px;
 }
 .k-search-input input {
   padding-top: .9rem;
+}
+.k-counter[data-invalid] {
+  color: #c82829;
 }
 .k-panel {
   bottom: 0;
@@ -68,7 +72,7 @@ body {
   height: auto;
 }
 .k-url-field-preview a {
-    color: blue;
+  color: blue;
 }
 .k-dialog-box {
   background: white;
@@ -97,7 +101,7 @@ body {
   border-left: 2px solid var(--color-background) !important;
 }
 .k-form-buttons {
-    background: #ff6666;
+  background: #ff6666;
 }
 .k-status-flag-unlisted .k-icon, .k-calendar-day[aria-selected=date] .k-button, .k-calendar-day[aria-current=date] .k-button {
   color: blue !important;
@@ -161,7 +165,7 @@ table {
 }
 .tbl[data-version="1.0.9"] .tbl-search {
   border-bottom: none;
-  font-size: 1.5rem;
+  font-size: var(--font-body);
 }
 .k-input[data-theme=field][data-disabled] {
   background: white;
@@ -179,7 +183,7 @@ table {
   border-top: none;
 }
 .k-dialog-footer .k-button-group .k-button {
-  padding: 1.5rem 1rem;
+  padding: var(--font-body) 1rem;
 }
 .k-dropdown-content {
   position: absolute;
@@ -230,7 +234,7 @@ table {
 }
 
 .tbl[data-version="1.0.9"] table {
-    font-size: 1.5rem;
+    font-size: var(--font-body);
 }
 .k-input[data-theme=field][data-type=textarea] .k-textarea-input-native {
     line-height: 1.2;
@@ -240,7 +244,7 @@ table {
     padding: 0 0;
 }
 .k-list-item-text em, .k-list-item-text, .k-list-item-content, .k-input[data-theme=field][data-type=radio] .k-input-element {
-    font-size: 1.5rem;
+    font-size: var(--font-body);
     color: #272727;
     overflow: visible;
 }
@@ -254,7 +258,7 @@ table {
     height: 38px;
 }
 .k-button, .k-empty p, .k-field-label, .k-section-header .k-headline, .k-topbar-button, .k-topbar-signals-button {
-    font-size: 1.5rem;
+    font-size: var(--font-body);
     color: var(--color-border);
 }
 .k-header .k-headline {
@@ -312,7 +316,7 @@ table {
   width: 24px;
 }
 .tbl[data-version="1.0.9"] .tbl-footer {
-  font-size: 1.5rem;
+  font-size: var(--font-body);
   padding: .35rem 0;
   margin-top: 4rem;
   color: var(--color-border);
@@ -331,6 +335,9 @@ table {
 }
 .k-textarea-input-wrapper {
   padding-right: 1em;
+}
+.k-counter[data-invalid] {
+    color: var(--color-attn);
 }
 
 
