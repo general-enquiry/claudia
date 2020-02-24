@@ -1,0 +1,24 @@
+title: Index
+sections:
+  drafts:
+    headline: Index items
+    type: pagetable
+    status: all
+    limit: 25
+    templates:
+      - index_single
+    columns:
+      title:
+        label: Code
+        text: '{{ page.title }}'
+        searchable: true
+      name:
+        label: Glaze name
+        text: '{{ page.glaze_name }}'
+        searchable: true
+      notes:
+        label: Notes
+        text: '{{ page.glaze_notes }}'
+      purpose:
+        label: Purpose
+        text: '{{ page.glaze_purpose }}'

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <script type="text/javascript" src="<?= $site->url() ?>/assets/js/jquery.js"></script>
     <script type="text/javascript" src="<?= $site->url() ?>/assets/js/main.js"></script>
-    <link rel="stylesheet" href="<?= $site->url() ?>/assets/css/style.css?v=0.1">
+    <link rel="stylesheet" href="<?= $site->url() ?>/assets/css/style.css?v=0.2">
 
     <title></title>
   </head>
@@ -16,5 +16,9 @@
         <span class="category">CATEGORY</span>
         <span class="date">DATE</span>
       </div>
-      <h1 class="footer-trigger">CLAUDIA LAU</h1>
+      <nav>
+        <span class="index-trigger">INDEX</span>
+        <h1 class="footer-trigger">CLAUDIA LAU</h1>
+      </nav>
+
     </header>

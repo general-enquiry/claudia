@@ -2,7 +2,7 @@
 :root {
   --color-border: #272727;
   --color-attn: #FF4500;
-  --font-body: 1.5rem;
+  --font-body: 1.2rem;
 }
 :focus {
   outline: 0;
@@ -96,6 +96,17 @@ body {
   padding: 0 0 .25rem;
   font-size: 0.85rem;
 }
+.k-section-header {
+  height: 23px;
+}
+.k-section:not(:first-of-type) {
+    border-top: 2px solid;
+    padding-top: 0.25rem;
+}
+.k-list-item-text {
+  overflow-x: hidden !important;
+}
+
 [data-theme=info] {
   background: var(--color-background) !important;
   border-left: 2px solid var(--color-background) !important;
@@ -140,6 +151,10 @@ body {
     background: #fff;
     border-radius: 2px;
     box-shadow: none;
+    height: 32px;
+}
+.k-list-item  a {
+    padding-bottom: 2px;
 }
 
 .k-list .k-list-item:not(:last-child) {
@@ -162,6 +177,11 @@ table {
 .tbl[data-version="1.0.9"] th:not(:last-child),
 .tbl[data-version="1.0.9"] td:not(:last-child) {
   border-right: none;
+}
+.tbl[data-version="1.0.9"] td {
+    height: 30px;
+    border-top: 1px solid #efefef;
+    padding: 0;
 }
 .tbl[data-version="1.0.9"] .tbl-search {
   border-bottom: none;
@@ -338,6 +358,9 @@ table {
 }
 .k-counter[data-invalid] {
     color: var(--color-attn);
+}
+.k-field-label, .k-section-header .k-headline {
+    padding: 0;
 }
 
 

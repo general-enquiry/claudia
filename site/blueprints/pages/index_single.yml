@@ -1,0 +1,36 @@
+title: Index item
+preset: page
+pages: false
+fields:
+  title:
+    label: Title
+    type: text
+    width: 1/2
+  glaze_image:
+    label: Image
+    type: files
+    width: 1/2
+  glaze_name:
+    label: Name
+    type: text
+    width: 1/2
+  glaze_notes:
+    label: Notes
+    type: text
+    width: 1/2
+  glaze_cone:
+    label: Cone
+    type: text
+    width: 1/2
+  glaze_atmos:
+    label: Atmosphere
+    type: text
+    width: 1/2
+  glaze_purpose:
+    label: Purpose
+    type: text
+    width: 1/2
+  glaze_application:
+    label: Application
+    type: text
+    width: 1/2
